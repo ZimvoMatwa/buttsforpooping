@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-enum HomeTabEnum { boleka, wallet, payment }
+enum HomeTabEnum { boleka, wallet, payment, zamake }
 
 class HomeTabSub {
   final HomeTabEnum tab;
@@ -14,6 +14,8 @@ class HomeTabSub {
         return 'Wallet';
       case HomeTabEnum.payment:
         return 'Payment';
+      case HomeTabEnum.zamake:
+        return "Zama'ke";
     }
   }
 
@@ -25,6 +27,8 @@ class HomeTabSub {
         return Icons.wallet;
       case HomeTabEnum.payment:
         return Icons.payment_rounded;
+      case HomeTabEnum.zamake:
+        return Icons.book_rounded;
     }
   }
 }

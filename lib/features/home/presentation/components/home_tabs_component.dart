@@ -18,23 +18,27 @@ class HomeTabsComp extends StatelessWidget {
       child: Column(
         children: [
           Container(
-            height: 70,
-            width: 70,
+            height: 60,
+            width: 60,
             margin: const EdgeInsets.only(bottom: 5),
             decoration: BoxDecoration(
-                color: const Color(0xFFD9D9D9),
-                borderRadius: BorderRadius.circular(10),
-                border:
-                    Border.all(width: 1, color: Colors.black.withOpacity(.5))),
+              color: const Color(0xFF59AB30).withOpacity(.7),
+              borderRadius: BorderRadius.circular(10),
+              border: Border.all(width: 1, color: Colors.black.withOpacity(.5)),
+            ),
             child: Icon(
               tab.icon,
               size: 30,
+              color: Colors.white,
             ),
           ),
           Text(
             tab.title,
             style: const TextStyle(
-                fontSize: 16, fontWeight: FontWeight.w400, color: Colors.black),
+              fontSize: 14,
+              fontWeight: FontWeight.w400,
+              color: Color.fromARGB(255, 78, 78, 78),
+            ),
           )
         ],
       ),

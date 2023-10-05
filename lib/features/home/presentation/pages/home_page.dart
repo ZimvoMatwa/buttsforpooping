@@ -13,7 +13,8 @@ class HomePage extends StatelessWidget {
     final tabList = [
       HomeTabSub(HomeTabEnum.boleka),
       HomeTabSub(HomeTabEnum.wallet),
-      HomeTabSub(HomeTabEnum.payment)
+      HomeTabSub(HomeTabEnum.payment),
+      HomeTabSub(HomeTabEnum.zamake)
     ];
 
     return Scaffold(
@@ -52,7 +53,7 @@ class HomePage extends StatelessWidget {
                   height: 47,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(20),
-                    color: const Color(0xFFFADDA4).withOpacity(.7),
+                    color: Color(0xFFF6B534).withOpacity(.7),
                   ),
                   child: const Expanded(
                     child: Center(
